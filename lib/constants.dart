@@ -8,6 +8,8 @@ const kSendButtonTextStyle = TextStyle(
 
 const kMessageTextFieldDecoration = InputDecoration(
   contentPadding: EdgeInsets.symmetric(vertical: 10.0, horizontal: 20.0),
+  fillColor: Colors.white60,
+  filled: true,
   hintText: 'Type your message here...',
   border: InputBorder.none,
 );
@@ -15,5 +17,25 @@ const kMessageTextFieldDecoration = InputDecoration(
 const kMessageContainerDecoration = BoxDecoration(
   border: Border(
     top: BorderSide(color: Colors.lightBlueAccent, width: 2.0),
+  ),
+);
+
+const kTextfieldDecoration = InputDecoration(
+  hintStyle: TextStyle(fontSize: 20.0, color: Colors.blueGrey),
+  hintText: 'lalalala.',
+  fillColor: Color(0xfff3f3f4),
+  filled: true,
+  floatingLabelBehavior: FloatingLabelBehavior.never,
+  contentPadding: EdgeInsets.symmetric(vertical: 10.0, horizontal: 20.0),
+  border: OutlineInputBorder(
+    borderRadius: BorderRadius.all(Radius.circular(32.0)),
+  ),
+  enabledBorder: OutlineInputBorder(
+    borderSide: BorderSide(color: Colors.lightBlueAccent, width: 1.0),
+    borderRadius: BorderRadius.all(Radius.circular(32.0)),
+  ),
+  focusedBorder: OutlineInputBorder(
+    borderSide: BorderSide(color: Colors.lightBlueAccent, width: 2.0),
+    borderRadius: BorderRadius.all(Radius.circular(32.0)),
   ),
 );
